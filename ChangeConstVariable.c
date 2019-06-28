@@ -9,7 +9,7 @@
 */
 void ChangeConstVariable()
 {
-	const int a = 10;
+    const int a = 10;
     int* ptrTemp;
     ptrTemp = &a;
     *ptrTemp = 100;
