@@ -33,7 +33,7 @@
                 + (bytes[3]);　　
 
     例：　　
-        errorInfo  = 0x80000000U (MSCD_ERRINFO_RESULT_UNDEFINED)　　
+        errorInfo  = 0x80000000U  
         encode:　　
                        0x1000.0000.0000.0000.0000.0000.0000.0000　　
                        0x1111.1111.0000.0000.0000.0000.0000.0000　　
