@@ -5,7 +5,10 @@
 
 ■Graphvizをインストールする。
 　フリーソフトのため、ネットから探して下さい。
-
+    ./configure --prefix= folder_name  
+    make  
+    make install  
+    
 ■Doxygenを立ち上げる。
 　File → Open → 本マニュアルに同梱している Doxyfile_16DOP を開く。
 
