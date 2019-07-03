@@ -119,4 +119,11 @@
     例えば:　　
         encode側は4bytesのencode方を使った場合:　　
             - decode側も4bytesのdecode方を使わなければなりません。　　
-            - もしdecode側は2bytesのdecode方を使ったら、取得結果は間違いはずです。　　
+            - もしdecode側は2bytesのdecode方を使ったら、取得結果は間違いはずです.  
+            
+3. Use Doxygen to parses the sources and generates the documentation.  
+    - install graphviz-2.40.1  
+    - create a doxygen configuration file (Doxyfile)  
+    - modify doxygen configuration file  
+    - run doxygen.   
+    * Refer to make_doxygen.bat and Doxyfile
