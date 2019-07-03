@@ -1,0 +1,53 @@
+-- 事前準備 --
+■Doxygen(1.8.2以降)をインストールする。
+　フリーソフトのため、ネットから探して下さい。
+　1.8.2以降を使用して下さい。
+
+■Graphvizをインストールする。
+　フリーソフトのため、ネットから探して下さい。
+
+■Doxygenを立ち上げる。
+　File → Open → 本マニュアルに同梱している Doxyfile_16DOP を開く。
+
+■Runタグ
+　「Run doxygen」を押すと、ドキュメントを生成します。
+-- 以上 --  
+
+----make_doxygen.bat内容------
+echo off
+
+echo Doxyfile not found and no input file specified!
+echo Doxygen version 1.5.5
+echo Copyright Dimitri van Heesch 1997-2008
+
+echo You can use doxygen in a number of ways:
+
+echo 1) Use doxygen to generate a template configuration file:
+echo     doxygen [-s] -g [configName]
+
+echo     If - is used for configName doxygen will write to standard output.
+
+echo 2) Use doxygen to update an old configuration file:
+echo     doxygen [-s] -u [configName]
+
+echo 3) Use doxygen to generate documentation using an existing configuration file:
+echo     doxygen [configName]
+
+echo     If - is used for configName doxygen will read from standard input.
+
+echo 4) Use doxygen to generate a template style sheet file for RTF, HTML or Latex.
+echo     RTF:   doxygen -w rtf styleSheetFile
+echo     HTML:  doxygen -w html headerFile footerFile styleSheetFile [configFile]
+echo     LaTeX: doxygen -w latex headerFile styleSheetFile [configFile]
+
+echo 5) Use doxygen to generate an rtf extensions file
+echo     RTF:   doxygen -e rtf extensionsFile
+
+echo If -s is specified the comments in the config file will be omitted.
+echo If configName is omitted `Doxyfile' will be used as a default.
+
+doxygen Doxyfile > result_doxygen.txt
+rem doxygen Doxyfile
+PAUSE
+echo on
+-------------以上----------------------
